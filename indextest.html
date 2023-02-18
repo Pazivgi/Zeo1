@@ -1,0 +1,80 @@
+﻿<!doctype html>
+<html lang="he">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Zeo</title>
+    <meta name="description" content="name of game" />
+    <meta name="keywords" content="" />
+    <meta name="author" content="names" />
+
+    <!-- CSS -->
+
+    <link href="styles/myStyle.css" rel="stylesheet" />
+
+    
+    <!--jQuery library-->
+    <script src="jScripts/jquery-1.12.0.min.js"></script>
+    <!--הקוד שמפעיל את תפריט הניווט-->
+    <script src="jScripts/myScript.js"></script>
+
+</head>
+
+<body>
+    <div id="container">
+        <header>
+            <!--קישור לדף עצמו כדי להתחיל את המשחק מחדש בלחיצה על הלוגו-->
+            <a href="indextest.html">
+                <img id="logo" src="Images/Logo.png"/> <!--הלוגו של המשחק שלכם-->
+                <p>Zeo</p>
+            </a>
+            <!--תפריט הניווט בראש העמוד-->
+            <nav>
+                <ul>
+                    <li><a class="about">אודות</a></li>
+                    <li><a class="howToPlay">איך משחקים?</a></li>
+                </ul>
+            </nav>
+        </header>
+        <div id="aboutDiv" class="popUp bounceInDown hide">
+            <a class="closeAbout">X</a>
+            <h2 id="AboutText">אודות</h2>
+            <img id=zeoLogoAbout src="Images/Logo.png" />
+            <h3>אפיון ופיתוח</h3>
+            <div>פז איבגי ומעין אטיאס</div>
+            <h3>אופיין ופותח במסגרת פרויקט בקורסים</h3>
+            <div>סביבות לימוד אינטראקטיביות + תכנות, אינטראקציה ואנימציה + תכנות</div>
+            <a href="https://www.hit.ac.il/telem/overview">
+            <h3 id="TelemLink">תשפ״ג - הפקולטה לטכנולוגיות למידה</h3></a>
+            <img id="HITlogoAbout" src="Images/HitLogo.png" />
+        </div>
+        <div id="howToPlayDiv" class="popUp bounceInDown hide">
+            <a class="closeHowToPlay">X</a>
+            <h2>איך משחקים?</h2>
+            <p>יש ללחוץ על התלולית המתאימה בעזרת את החפירה על מנת לגלות האם התשובה נכונה, צבע הטקסט ישתנה לכחול לאחר לחיצה על התשובה.
+                לאחר מכן, לחצו על כפתור ״בדוק והמשך״. 
+                אם התלולית שנבחרה נכונה, התשובה תיצבע בצבע ירוק.
+                אם היא שגויה, היא תיצבע בצבע אדום.
+            </p>
+
+        </div>
+
+        <div id="gameArea" class="">
+            <!--src = הקישור של דף המשחק שלכם -->
+            <iframe id="gameIframe" src="https://simmer.io/@PazIvgi/zeo1" frameBorder="0" allowfullscreen="">Browser not compatible.</iframe>
+        </div>
+    </div>
+</body>
+
+<footer>
+    <p><b>Credits</b></p>
+    <a href="https://www.vecteezy.com/free-vector/mole">Mole Vectors by Vecteezy</a><br>
+    <a href="https://www.vecteezy.com/free-vector/wooden-frame">Wooden Frame Vectors by Vecteezy</a><br>
+    <a href="https://www.vecteezy.com/free-vector/dinosaur-fossil">Dinosaur Fossil Vectors by Vecteezy</a><br>
+    <a href="https://www.vecteezy.com/free-vector/dinosaur">Dinosaur Vectors by Vecteezy</a><br>
+    <a href="https://www.vecteezy.com/free-vector/jungle">Jungle Vectors by Vecteezy</a><br>
+    <a href="https://www.freepik.com/free-vector/kids-explore-dino-fossils-play-archaeologists_22694504.htm">Image by upklyak</a> on Freepik<br>
+
+</footer>
+</html>
